@@ -1,0 +1,41 @@
+add_newline = true # Don't print a new line at the start of the prompt
+
+[line_break]
+disabled = true
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]                      # The name of the module we are configuring is "character"
+success_symbol = "[ ➜ ☀️  |](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+error_symbol =  "[ x 🌧️  |](bold red)"
+#format = """
+#[┌───────────────────>](bold green)
+#[│](bold green)$directory$rust$package
+#[└─>](bold green) """
+
+[package] # Disable the package module, hiding it from the prompt completely
+disabled = true
+
+[time]
+disabled = false
+format = '[ 🕙 \[$time\]]($style)'
+time_format = "%A %e, %H:%M"
+utc_time_offset = "-5"
+
+[cmd_duration]
+min_time = 100
+format = '| time: [$duration]($style)'
+style = "bold red"
+show_notifications = true
+
+#[username]
+#disabled = false
+#style_user = "white bold"
+#style_root = "black bold"
+#format = "[$user]($style)"
+#show_always = true
+
+#[hostname]
+#ssh_only = false
+#format =  "@[$hostname](bold red) "
+#trim_at = ".companyname.com"
+#disabled = false
