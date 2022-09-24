@@ -1,0 +1,134 @@
+sudo apt-get update && sudo apt-get upgrade -y
+
+	# Minimal Installation:
+sudo apt-get install -y git locate neofetch htop conky rofi gedit gparted vlc
+
+	# Full Installation:
+sudo apt-get install -y git locate neofetch htop conky rofi gedit gparted vlc meld arduino virtualbox chromium obs-studio pcmanfm nitrogen keepassxc shellcheck stacer
+
+	# Aditional Packages
+sudo apt-get install -y kdenlive bleachbit pass variety lxappearance qt5ct grub-customizer
+
+	# CLI Utilities/Tools
+sudo apt-get install -y cmatrix htop neofetch git locate tldr ranger trash-cli ncdu figlet lolcat
+
+	# Flatpak Packages (from Flathub)
+sudo apt-get install flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+flatpak install flathub de.haeckerfelix.Shortwave
+flatpak run de.haeckerfelix.Shortwave
+
+flatpak install flathub com.github.alainm23.planner
+flatpak run com.github.alainm23.planner
+
+flatpak install flathub com.github.micahflee.torbrowser-launcher
+flatpak run com.github.micahflee.torbrowser-launcher
+
+flatpak install flathub io.lbry.lbry-app
+flatpak run io.lbry.lbry-app
+
+flatpak install flathub io.github.lainsce.Emulsion
+flatpak run io.github.lainsce.Emulsion
+
+flatpak install flathub com.github.tchx84.Flatseal
+flatpak run com.github.tchx84.Flatseal
+
+flatpak install flathub com.github.jeromerobert.pdfarranger
+flatpak run com.github.jeromerobert.pdfarranger
+
+flatpak install flathub org.gabmus.whatip
+flatpak run org.gabmus.whatip
+
+flatpak install flathub com.belmoussaoui.Authenticator
+flatpak run com.belmoussaoui.Authenticator
+
+flatpak install flathub com.skype.Client
+flatpak run com.skype.Client
+
+flatpak install flathub com.discordapp.Discord
+flatpak run com.discordapp.Discord
+
+flatpak install flathub com.github.qarmin.czkawka
+flatpak run com.github.qarmin.czkawka
+
+flatpak install flathub com.github.gi_lom.dialect
+flatpak run com.github.gi_lom.dialect
+
+flatpak install flathub com.bitstower.Markets
+flatpak run com.bitstower.Markets
+
+#Bash aliases
+
+	#Navigation
+alias ..='cd ..' 
+alias ....='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
+
+	#ls Command
+alias ls='ls -alhF --color=always --group-directories-first' # My preferred listing
+alias la='ls -ah --color=always --group-directories-first' # All files and dirs
+alias ll='ls -lh --color=always --group-directories-first' # Long format
+alias lt='ls -aTh --color=always --group-directories-first' # Tree listing
+alias l.='ls -ah | egrep "^\."'
+
+	#Software Manager
+alias update='sudo apt-get update'
+alias upgrade='sudo apt-get upgrade'
+alias install='sudo apt-get install'
+alias remove='sudo apt-get remove'
+alias purge='sudo apt-get purge'
+#alias search"sudo apt-cache search"
+
+	#Flatpak
+alias fupdate='flatpak update'
+alias finstall='flatpak install'
+alias fremotes='flatpak remotes'
+alias fsearch='flatpak search'
+alias frun='flatpak run'
+alias flist='flatpak list'
+alias funistall='flatpak unistall'
+alias fhistory='flatpak history'
+
+	#Git
+alias addup='git add -u'
+alias addall='git add .'
+alias branch='git branch'
+alias checkout='git checkout'
+alias clone='git clone'
+alias commit='git commit -m'
+alias fetch='git fetch'
+alias pull='git pull origin'
+alias push='git push origin'
+alias status='git status'
+alias tag='git tag'
+alias newtag='git tag -a'
+
+alias tpush='git add -A && git commit -m "&(date)" && git jush'
+alias tpull='git pull'
+
+	#Switch Between Shells
+alias tobash='sudo chsh $USER -s /bin/bash && echo "BASH!!!"'
+alias tozsh='sudo chsh $USER -s /bin/zsh && echo "ZSH!!!"'
+alias tofish='sudo chsh $USER -s /bin/fish && echo "FISH!!!"'
+alias findbash='type -a bash'
+alias findzsh='type -a zsh'
+alias findfish='type -a fish'
+
+	#General
+alias cl='clear'
+alias cc='clear'
+alias cat='cat -n'
+alias df='df -h'
+alias du='du -h'
+alias locate='locate -i'
+
+alias grep='grep --color=auto'
+	
+	#Specific Use
+alias rsyncm='rsync -arv --delete /home/aleksandros/Linux\ Mint\ Files/ /home/aleksandros/Internal/Linux/Linux\ Mint\ Files/'
+alias rsynch='rsync -ar --exclude={/home/aleksandros/Internal, /home/aleksandros/.cache} /home/aleksandros/ /home/aleksandros/Internal/Linux/Linux\ Mint\ Files/Home'
+
+# (chromium or chromium-browser) (exa) (discus)

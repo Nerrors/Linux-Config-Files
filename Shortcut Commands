@@ -1,0 +1,78 @@
+	#General
+
+#Show Desktop (Ctrl + D)
+
+#Cycle throught open windows (Alt + Tab)
+
+#Show the window selection screen (Ctrl + Alt + Down)
+
+#Show the workspace selection screen (Ctrl + Alt + Up)
+
+#Run Dialog (Alt + F2)
+
+	#Windows Shortcuts
+
+#Close window (Ctrl + W), (Ctrl + Shift + C)
+
+	#Workspaces Shortcuts
+
+#Switch to left workspace (Ctrl + Super + Left(Arrow)) (Default Ctrl + Super + Left(Arrow) Shortcut Push snap left (Category: Windows -> Tiling and Snapping))
+
+#Switch to right workspace (Ctrl + Super + Right(Arrow)) (Default Ctrl + Super + Right(Arrow) Shortcut Push snap right (Category: Windows -> Tiling and Snapping))
+
+	#Launchers
+
+#Launch web browser (WWW), (Super + F)
+
+	#System Shortcuts
+
+#Log out (Ctrl + Alt + Delete)
+
+#Lock screen (Super + L) (Default Super + L Shortcut Toggle Looking Glass (Category: General -> Troubleshooting)), (Ctrl + Alt + L), (Screensaver)
+
+#Suspend (PowerOff(PCButton)) (Default PowerOff Shortcut Shut down (Category: System))
+
+#Restart Cinnamon (Ctrl + Alt + Escape)
+
+	#Sound and Media Shortcuts
+
+#Volume Up (Alt + .)
+
+#Volume Down (Alt + ,)
+
+#Volume Mute  (Alt + M)
+
+	#Custom Shortcuts
+
+#Rofi (Alt + Space) (Default Alt + Space Shortcut Activate window menu (Category: Windows))
+rofi -combi-modi drun,window,ssh -theme "~/.config/rofi/rofi-themes/Official Themes/purple" -font "hack 11" -show combi -show-icons -lines 14 -columns 2 -width 1300 -location 0
+rofi -combi-modi drun,window,ssh -font "hack 11" -show combi -show-icons -lines 12 -columns 1 -width 1250 -location 0
+
+#Conky (Super + C)
+conky
+
+#Kill Conky (Alt + C)
+killall conky
+
+#Dialect (Super + T)
+flatpak run com.github.gi_lom.dialect
+/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=dialect com.github.gi_lom.dialect
+
+#Terminal Emulator (Ctrl + Alt + T), (Super + Return(Enter))
+alacritty
+
+#Screenshot (Super + Print)
+gnome-screenshot --interactive
+
+#System Monitor (Ctrl + Shift + Escape)
+gnome-system-monitor
+
+#System Settings (Super + I)
+cinnamon-settings
+
+#Shutdown (Ctrl + Alt + End)
+shutdown -h now
+
+#Spotify (Super + S)
+flatpak run com.spotify.Client
+/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=spotify --file-forwarding com.spotify.Client @@u %U @@
