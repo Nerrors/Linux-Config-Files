@@ -1,4 +1,4 @@
-# Linux Config Files
+![Linux Icon](https://github.com/Nerrors/Linux-Config-Files/blob/master/res/pen_3.png) # Linux Config Files
 
 Dotfiles are the customization files (their filenames usually begin with a period) that are used to personalize your linux or other Unix-based system. This repository contains my personal dotfiles. They are stored here for convenience so that I may.
 
@@ -9,6 +9,6 @@ The Repository containts:
 - Neofetch
 - starship.toml
 - Alacritty
-- Theme
+- Themes
+- Rofi
 
-![[Linux Mint - (2021-11-29 18-16-19).png]]
